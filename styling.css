@@ -331,7 +331,7 @@ ul li a:hover {
 .portfolio_card {
     display: grid;
     isolation: isolate;
-    cursor: pointer;
+    
     text-align: center;
     background-color: rgb(243, 243, 243);
     border-radius: 10px;
@@ -341,7 +341,10 @@ ul li a:hover {
     border-color: #000;
 }
 
-
+ .portfolio_card  a {
+    cursor: pointer;
+    color: fuchsia;
+}
 
 
 .portfolio_card img {
