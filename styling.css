@@ -158,11 +158,11 @@ ul li a:hover {
     background-color: var(--primary-color);
 }
 
-.curriculm_vitae {
+.curriculm_vitae a{
     color: var(--primary-color);
 }
 
-.curriculm_vitae:hover {
+.curriculm_vitae a:hover {
     background-color: var(--primary-color-dark);
     color: #e726b7;
 }
