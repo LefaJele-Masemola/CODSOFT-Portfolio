@@ -362,6 +362,9 @@ header {
     .buttons {
         margin: auto;
     }
+    form input {
+        width: calc(100% - 20px); /* Adjust the width to leave some space on smaller screens */
+    }
 }
 
 /*services*/
@@ -570,7 +573,8 @@ footer {
 }
 
 form input {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     height: 45px;
     border-radius: 5px;
     text-align: center;
