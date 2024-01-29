@@ -48,6 +48,7 @@ header {
     color: fuchsia;
     text-decoration: none;
     margin-right: 1rem; 
+    transition: .3s;
 }
 
 .nav-list {
@@ -64,11 +65,16 @@ header {
     color: #1f2937;
     font-weight: 600;
     transition: color 0.3s;
+    padding: .5rem 1rem;
+    border: 2px solid transparent;
 }
 
-.nav-list a:hover {
-    color: #e726b7;
-}
+
+  .nav-list  li a:hover{
+    color: fuchsia;
+    border-top-color: rgb(68, 144, 211);
+    border-bottom-color: rgb(68, 144, 211) ;
+ }
 
 /* Hamburger Menu Styles */
 .menu-toggle {
