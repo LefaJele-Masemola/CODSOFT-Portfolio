@@ -293,6 +293,10 @@ header {
     .skills_grid {
         grid-template-columns: repeat(1, 1fr);
     }
+    .skills_card img {
+        max-width: 100%; /* Ensure skills images do not extend beyond the container */
+        height: auto;
+    }
 
     /* Portfolio Section */
     .portfoliogrid {
@@ -413,8 +417,9 @@ header {
 
 .services__grid {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 2rem;
+    justify-content: center;
     
 }
 
