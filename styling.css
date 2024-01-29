@@ -5,7 +5,7 @@
     --text-dark: #1f2937;
     --text-light: #6b7280;
     --extra-light: #faf5ff;
-    --max-width: 1200px;
+    
 }
 
 
@@ -13,6 +13,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 
 }
 
@@ -23,6 +24,8 @@ a {
 
 body {
     font-family: 'Poppins', sans-serif;
+   margin: 0;
+   overflow: scroll;
 
 }
 
@@ -180,7 +183,20 @@ ul li a:hover {
 
 }
 
-@media (width < 750px) {
+@media (width < 768px) {
+    .social_icons {
+        flex-direction: row; /* or any other layout that suits your design */
+        justify-content: center;
+    }
+
+    .social_icons i {
+        font-size: 18px; /* Adjust the font size for smaller screens */
+    }
+    .services_card img {
+        max-width: 100%; /* Ensure skills images do not extend beyond the container */
+        height: auto;
+    }
+
     ul {
         position: absolute;
         width: 100%;
@@ -242,14 +258,14 @@ ul li a:hover {
     border: #e726b7;
 }
 
-.skills card_content h4 {
+.skills_card_content h4 {
     font-size: 1rem;
     font-weight: 600;
     margin-bottom: .5rem;
     color: var(--text-dark);
 }
 
-.skills card_content p {
+.skills_card_content p {
     font-size: .9rem;
     color: var(--text-light);
 
@@ -259,6 +275,7 @@ ul li a:hover {
 .services {
     padding: 40px 0px 0px;
     background-color: aliceblue;
+   
 
 }
 
@@ -268,9 +285,9 @@ ul li a:hover {
 
 .services__grid {
     display: grid;
-    grid-template-columns: repeat(8, 2fr);
+    grid-template-columns: repeat(8, 1fr);
     gap: 2rem;
-
+    
 }
 
 .services__card {
@@ -280,8 +297,10 @@ ul li a:hover {
 }
 
 .services__card img {
-    max-width: 75px;
+    
     margin: auto;
+    max-width: 100%;
+    height: auto;
 
 }
 
@@ -302,9 +321,8 @@ ul li a:hover {
     position: relative;
     isolation: isolate;
     padding: 100px 0px;
-    transform: scale(-5deg);
-    z-index: -1;
     background-color: aliceblue;
+    
 }
 
 .portfolio .title {
@@ -321,27 +339,26 @@ ul li a:hover {
 
 .portfoliogrid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-
-
-
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    
 }
 
 .portfolio_card {
+    
     display: grid;
     isolation: isolate;
-    
     text-align: center;
     background-color: rgb(243, 243, 243);
     border-radius: 10px;
     box-shadow: 0 5px var(--primary-shadow);
-    padding: 24px 2px;
-    border: 1 px solid;
-    border-color: #000;
+    padding: 2px ;
+    border: 1px solid;
+    border-color: #000; 
+   
 }
 
- .portfolio_card  a {
+ .portfolio_card a {
     cursor: pointer;
     color: fuchsia;
 }
@@ -349,6 +366,10 @@ ul li a:hover {
 
 .portfolio_card img {
     display: block;
+        max-width: 100%;
+        height: auto;
+      
+    
 }
 
 .project_title {
@@ -381,12 +402,13 @@ ul li a:hover {
 footer {
     background: white;
     text-align: center;
+    
 }
 
 .footer {
     margin-top: 1px;
     width: 100%;
-    padding: 50px 15%;
+    padding: 50px 5,5%;
     background: #333;
     color: #efefef;
     display: flex;
@@ -400,6 +422,8 @@ footer {
 .footer_news {
     flex-grow: 2;
     color: #000;
+    max-width: 100%;
+    height: auto;
 }
 
 .footer_news button  {
@@ -432,7 +456,8 @@ form input {
 
 .social_icons {
     margin-top: 30px;
-    display: flex;
+   
+    
 
 }
 
