@@ -191,7 +191,7 @@ header {
 
 }
 
-@media  screen and  (max-width :768px) {
+@media  screen and  (max-width :500px) {
     .social_icons {
         flex-direction: row; 
         justify-content: center;
